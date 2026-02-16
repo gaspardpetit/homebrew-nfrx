@@ -15,7 +15,7 @@ class NfrxLlm < Formula
   end
 
   def install
-    bin.install "nfrx_darwin_*/*/nfrx-llm"
+    bin.install Dir["nfrx_darwin_*/nfrx-llm"].first
   end
 
   test do
