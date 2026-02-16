@@ -1,30 +1,30 @@
 class Nfrx < Formula
   desc "nfrx inference broker server"
   homepage "https://github.com/gaspardpetit/nfrx"
-  version "0.8.1"
+  version "0.8.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/gaspardpetit/nfrx/releases/download/v0.8.1/nfrx_darwin_arm64_v0.8.1.tar.gz"
-      sha256 "13a78025d767b9b2480727ab15a3b7e143917d349b58ee4e6d594dd328bdfee4"
+      url "https://github.com/gaspardpetit/nfrx/releases/download/v0.8.2/nfrx_darwin_arm64_v0.8.2.tar.gz"
+      sha256 "f7c1f62f79fe06e5170c8104634c6bb38c61f1799b8d5c1908e77eb8b36aa275"
     end
 
     on_intel do
-      url "https://github.com/gaspardpetit/nfrx/releases/download/v0.8.1/nfrx_darwin_amd64_v0.8.1.tar.gz"
-      sha256 "7a1c52a6621113fbe070f746dae22bf594f4c0227e8d162cc3460c9c59e12b38"
+      url "https://github.com/gaspardpetit/nfrx/releases/download/v0.8.2/nfrx_darwin_amd64_v0.8.2.tar.gz"
+      sha256 "764c542ce1f92acf2cf04e8ccf58fe9258c204ad23263c08dfffc4c8bcc117b2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gaspardpetit/nfrx/releases/download/v0.8.1/nfrx_linux_arm64_v0.8.1.tar.gz"
-      sha256 "1ffd40278e5fdc6a77e1020bf9436dfb319a7d3733f071efe1b0095163515028"
+      url "https://github.com/gaspardpetit/nfrx/releases/download/v0.8.2/nfrx_linux_arm64_v0.8.2.tar.gz"
+      sha256 "3df75ace9214710cc3e8bf39682a71a547e300e19f28ea2b2d0a708cbed55636"
     end
 
     on_intel do
-      url "https://github.com/gaspardpetit/nfrx/releases/download/v0.8.1/nfrx_linux_amd64_v0.8.1.tar.gz"
-      sha256 "b43563cd0833c0db3e00f7fc0aba1c568feb93b23d264a167eaf95677d224c63"
+      url "https://github.com/gaspardpetit/nfrx/releases/download/v0.8.2/nfrx_linux_amd64_v0.8.2.tar.gz"
+      sha256 "ee5996648cf1ebc3adc8460153abd57f5e1b9066dbed24c4d6b84ddc7da656c0"
     end
   end
 

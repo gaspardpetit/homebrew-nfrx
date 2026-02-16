@@ -29,7 +29,19 @@ update_formula() {
   echo "Updating $formula"
 
   sed -i.bak \
+    -e "s|^  version \".*\"|  version \"$VERSION\"|" \
+    "$FORMULA_DIR/$formula"
+
+  sed -i.bak \
+    -e "s|url \".*nfrx_darwin_arm64_v.*\"|url \"https://github.com/$REPO/releases/download/v$VERSION/nfrx_darwin_arm64_v$VERSION.tar.gz\"|" \
+    "$FORMULA_DIR/$formula"
+
+  sed -i.bak \
     -e "/darwin_arm64/{n;s|sha256 \".*\"|sha256 \"$(sha nfrx_darwin_arm64_v$VERSION.tar.gz)\"|;}" \
+    "$FORMULA_DIR/$formula"
+
+  sed -i.bak \
+    -e "s|url \".*nfrx_darwin_amd64_v.*\"|url \"https://github.com/$REPO/releases/download/v$VERSION/nfrx_darwin_amd64_v$VERSION.tar.gz\"|" \
     "$FORMULA_DIR/$formula"
 
   sed -i.bak \
@@ -37,7 +49,15 @@ update_formula() {
     "$FORMULA_DIR/$formula"
 
   sed -i.bak \
+    -e "s|url \".*nfrx_linux_arm64_v.*\"|url \"https://github.com/$REPO/releases/download/v$VERSION/nfrx_linux_arm64_v$VERSION.tar.gz\"|" \
+    "$FORMULA_DIR/$formula"
+
+  sed -i.bak \
     -e "/linux_arm64/{n;s|sha256 \".*\"|sha256 \"$(sha nfrx_linux_arm64_v$VERSION.tar.gz)\"|;}" \
+    "$FORMULA_DIR/$formula"
+
+  sed -i.bak \
+    -e "s|url \".*nfrx_linux_amd64_v.*\"|url \"https://github.com/$REPO/releases/download/v$VERSION/nfrx_linux_amd64_v$VERSION.tar.gz\"|" \
     "$FORMULA_DIR/$formula"
 
   sed -i.bak \
