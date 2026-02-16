@@ -15,7 +15,7 @@ class NfrxMcp < Formula
   end
 
   def install
-    bin.install Dir["nfrx_darwin_*/nfrx-mcp"].first
+    bin.install Dir["nfrx_darwin_*/nfrx-mcp"]
   end
 
   test do
