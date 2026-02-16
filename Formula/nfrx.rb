@@ -1,5 +1,5 @@
-class NfrxLlm < Formula
-  desc "nfrx LLM worker"
+class Nfrx < Formula
+  desc "nfrx inference broker server"
   homepage "https://github.com/gaspardpetit/nfrx"
   version "0.8.1"
   license "MIT"
@@ -29,10 +29,10 @@ class NfrxLlm < Formula
   end
 
   def install
-    bin.install "nfrx-llm"
+    bin.install "nfrx"
   end
 
   test do
-    system "#{bin}/nfrx-llm", "--version"
+    system "#{bin}/nfrx", "--version"
   end
 end
