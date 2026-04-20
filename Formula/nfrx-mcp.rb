@@ -1,30 +1,30 @@
 class NfrxMcp < Formula
   desc "nfrx MCP worker"
   homepage "https://github.com/gaspardpetit/nfrx"
-  version "0.9.2"
+  version "0.9.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/gaspardpetit/nfrx/releases/download/v0.9.2/nfrx_darwin_arm64_v0.9.2.tar.gz"
-      sha256 "12ceeb6672fcfe8b8381b76ec195c0c7ea2176ce3d20926c0c2aa41a48bfce01"
+      url "https://github.com/gaspardpetit/nfrx/releases/download/v0.9.4/nfrx_darwin_arm64_v0.9.4.tar.gz"
+      sha256 "265bcb8d897711856807019241886a40a706f6c10b5344ca9697b37f60d0435f"
     end
 
     on_intel do
-      url "https://github.com/gaspardpetit/nfrx/releases/download/v0.9.2/nfrx_darwin_amd64_v0.9.2.tar.gz"
-      sha256 "cd081bfe99a74f1a0eaaad0a5c1424efa0a30ca981843b57ef1833125ec034df"
+      url "https://github.com/gaspardpetit/nfrx/releases/download/v0.9.4/nfrx_darwin_amd64_v0.9.4.tar.gz"
+      sha256 "ff15e800bbe90036229dab9a2f07a022c85fd1ae535e841efb5fe5cad7844226"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gaspardpetit/nfrx/releases/download/v0.9.2/nfrx_linux_arm64_v0.9.2.tar.gz"
-      sha256 "58263b71b4299b7160a1aacd36e6cd730a76de8ad5036354cd54159ee75777dc"
+      url "https://github.com/gaspardpetit/nfrx/releases/download/v0.9.4/nfrx_linux_arm64_v0.9.4.tar.gz"
+      sha256 "9d547a26d4871c31ff22a6a8193c0c3ada2b4c5af9dfff192dd2b13464eca762"
     end
 
     on_intel do
-      url "https://github.com/gaspardpetit/nfrx/releases/download/v0.9.2/nfrx_linux_amd64_v0.9.2.tar.gz"
-      sha256 "cb3879a760b7c26dce84828ee7a9c9296fb8c5f97414e629932c8281f1fda419"
+      url "https://github.com/gaspardpetit/nfrx/releases/download/v0.9.4/nfrx_linux_amd64_v0.9.4.tar.gz"
+      sha256 "e0e35b46a3063ea676d2dc3feef9728849515bbcd9d54d9df5a3cb7ce4fe6a47"
     end
   end
 
